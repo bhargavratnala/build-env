@@ -69,7 +69,7 @@ VITE_BUILD_ENV_CONFIG=/build-env.config
 ```
 
 
-> [!CAUTION] Never commit the private_key file or private key value.
+> ⚠️ Never commit the private_key file or private key value.
 
 ## Step 3: Build Encrypted Environment Config
 
