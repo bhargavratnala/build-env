@@ -41,7 +41,7 @@ Browsers cannot read `.env` files at runtime.
 ## 📦 Installation
 
 ```bash
-npm install build-env
+npm install @bhargavratnala/build-env
 ```
 
 ## 🪜 Step-by-Step Usage
