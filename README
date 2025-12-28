@@ -54,17 +54,19 @@ build-env generate
 
 
 This generates:
-
+```md
 private_key        # Private key (DO NOT COMMIT)
 public_key.pem     # Public key used for encryption
-
+```
 
 ## Step 2: Store Private Key in .env
 
 Add the private key and config path to your .env file:
 
+```env
 VITE_PRIVATE_KEY=your_private_key_here
 VITE_BUILD_ENV_CONFIG=/build-env.config
+```
 
 
 ⚠️ Never commit the private_key file or private key value.
