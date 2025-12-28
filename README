@@ -49,12 +49,12 @@ npm install build-env
 Step 1: Generate Encryption Keys
 
 ```bash
-build-env generate
+npx build-env generate
 ```
 
 
 This generates:
-```md
+```text
 private_key        # Private key (DO NOT COMMIT)
 public_key.pem     # Public key used for encryption
 ```
@@ -69,7 +69,7 @@ VITE_BUILD_ENV_CONFIG=/build-env.config
 ```
 
 
-⚠️ Never commit the private_key file or private key value.
+> [!CAUTION] Never commit the private_key file or private key value.
 
 ## Step 3: Build Encrypted Environment Config
 
@@ -130,7 +130,8 @@ const appMode = get("APP_MODE");
 ✔ No process.env
 ✔ No build-time replacement
 
-🧩 Supported Frameworks
+
+## 🧩 Supported Frameworks
 
 ✅ React (CRA, Vite)
 
@@ -150,22 +151,18 @@ Suitable for:
 - Public keys
 - Environment identifiers
 
-❌ Do not store secrets such as database credentials or private tokens.
+> ❌ Do not store secrets such as database credentials or private tokens.
 
 ## 🏗️ Deployment Workflow
-```md
-Build once
-↓
-Deploy static assets
-↓
-Set PRIVATE_KEY in environment
-↓
-Serve encrypted config
-↓
-App decrypts environment variables at runtime
+```mermaid
+graph TD;
+  A[Build once] --> B[Deploy static assets]
+  B --> C[Set PRIVATE_KEY in environment]
+  C --> D[Serve encrypted config]
+  D --> E[App decrypts variables at runtime]
 ```
 
-Works well with:
+## Works well with:
 
 - Docker
 - Kubernetes
