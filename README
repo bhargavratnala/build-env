@@ -138,7 +138,7 @@ const appMode = get("APP_MODE");
 
 ✅ Any SPA that supports runtime JavaScript loading
 
-🔒 Security Notes
+## 🔒 Security Notes
 
 All environment variables are encrypted
 
@@ -152,8 +152,8 @@ Suitable for:
 
 ❌ Do not store secrets such as database credentials or private tokens.
 
-🏗️ Deployment Workflow
-```
+## 🏗️ Deployment Workflow
+```md
 Build once
 ↓
 Deploy static assets
@@ -173,7 +173,7 @@ Works well with:
 - Vercel
 - Nginx / CDN hosting
 
-🎯 When to Use build-env
+## 🎯 When to Use build-env
 
 Use build-env if you want:
 - A single frontend build
